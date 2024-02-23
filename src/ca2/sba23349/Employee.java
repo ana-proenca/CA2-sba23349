@@ -5,14 +5,25 @@ public class Employee {
     private String email;
     private int empNum;
 
+    
+    static int nextEmpNum = 1; //static field 
+    
+    
+    public static int getNextEmpNum() {
+        return nextEmpNum;
+    }
+
+
     public Employee() {
-        name = "";
-        email = "";
+        this.name = "name";
+        this.email = "xxx@gmail.com";
+        this.empNum = nextEmpNum++;
     }
 
     public Employee(String name, String email) {
         this.name = name;
         this.email = email;
+        this.empNum = nextEmpNum++;
     }
     
     
@@ -20,25 +31,11 @@ public class Employee {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getEmail() {
         return email;
-    }
+    }  
 
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public int getEmpNum() {
-        return empNum;
-    }
-
-    public void setEmpNum(int empNum) {
-        this.empNum = empNum;
-    }
-    
-    
 }

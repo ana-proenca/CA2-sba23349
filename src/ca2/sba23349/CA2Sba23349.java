@@ -14,7 +14,8 @@ public class CA2Sba23349 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Employee employee1 = new Employee();
+        Employee employee2 = new Employee("sam","sam@sam");
     }
     
 }
