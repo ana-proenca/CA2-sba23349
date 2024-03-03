@@ -27,5 +27,15 @@ public class EmployeeTest {
         
         System.out.println(Employee.nextEmpNum);
         
+        int m = 2;
+        
+        for(Employee search : projectGroup) {
+            int empNumber = search.getEmployeeNumber();
+            
+            if(empNumber > m){
+                System.out.println(search.getName());
+            }
+        }
+        
     }
 }

@@ -28,6 +28,10 @@ public class Employee {
     public String getEmail() {
         return email;
     }  
+   
+    public int getEmployeeNumber() {
+        return empNum;
+    }
     
     public static int getNextEmpNum() {
         return nextEmpNum;
