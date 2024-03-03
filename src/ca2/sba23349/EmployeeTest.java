@@ -47,9 +47,10 @@ public class EmployeeTest {
         company.addNewStaff(employee2);
         company.addNewStaff(employee3);
         
-        company.addNewStaff(employee3);
-        company.addNewStaff(employee3);
-        company.addNewStaff(employee3);
+        //test HashSet
+//        company.addNewStaff(employee3);
+//        company.addNewStaff(employee3);
+//        company.addNewStaff(employee3);
 
         try {
             Scanner sc = new Scanner(System.in);
