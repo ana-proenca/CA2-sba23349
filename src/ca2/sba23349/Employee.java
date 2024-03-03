@@ -8,12 +8,6 @@ public class Employee {
     
     static int nextEmpNum = 1; //static field 
     
-    
-    public static int getNextEmpNum() {
-        return nextEmpNum;
-    }
-
-
     public Employee() {
         this.name = "name";
         this.email = "xxx@gmail.com";
@@ -34,8 +28,14 @@ public class Employee {
     public String getEmail() {
         return email;
     }  
+    
+    public static int getNextEmpNum() {
+        return nextEmpNum;
+    }
 
     public void setEmail(String email) {
-        this.email = email;
+        if (email.length() > 3) {
+            this.email = email;
+        }
     }
 }
